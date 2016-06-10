@@ -1,31 +1,30 @@
-<h1>{{question.asked}}</h1>
-<br>
-<img class="ques-avatar" src={{question.avatar}}>
-<h5>Asked By: {{question.author}}</h5>
-
-<p>{{question.notes}}</p>
-
-<div class="modify-buttons">
-
-  {{update-question question=question updateQuestion="updateQuestion"}}
-
+<div class="row individual-question-box">
+  <h1>{{question.asked}}</h1>
+  <h5 class="op-question">Asked By: {{question.author}}</h5>
+  <br>
+  <div class="col-xs-4">
+    <img class="ques-avatar" src={{question.avatar}}>
+  </div>
+  <div class="col-xs-8">
+    <p>{{question.notes}}</p>
+  </div>
+  <div class="modify-buttons">
+    {{update-question question=question updateQuestion="updateQuestion"}}
+  </div>
 </div>
 
 <div class="all-answers-box">
-  <h2>Answers For This Question</h2>
+  <h2>Answers For {{question.author}}'s Question</h2>
 
   {{#if question.answers}}
 
   {{#each question.answers as |answer|}}
-    <div class="single-answer">
-      {{answer-tile answer=answer}}
-    </div>
+    {{answer-tile answer=answer}}
   {{/each}}
 
   {{else}}
     <h3>No answers yet. Submit one below!</h3>
   {{/if}}
-
 </div>
 
 {{new-answer saveAnswer="saveAnswer" question=question}}

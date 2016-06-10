@@ -1,6 +1,17 @@
 body {
   text-align: center;
   font-family: 'Varela', sans-serif;
+  font-size: 18pt;
+}
+
+a {
+  color: #2ECC40;
+}
+
+a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #5AB953;
 }
 
 /*images*/
@@ -49,4 +60,37 @@ label {
   font-size: 18pt;
   width: 100%;
   height: 200px;
+}
+
+/*indiv. question page*/
+
+.op-question {
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+.modify-buttons {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/*.all-answers-box {
+  border: solid red 2px;
+}*/
+
+.individual-answer-box {
+  font-size: 14pt;
+  margin-top: 20px;
+  padding: 10px;
+  border: solid black 4px;
+  border-radius: 10px;
+}
+
+.individual-question-box {
+  border: solid black 4px;
+  border-radius: 10px;
+}
+
+footer {
+  margin-bottom: 20px;
 }
