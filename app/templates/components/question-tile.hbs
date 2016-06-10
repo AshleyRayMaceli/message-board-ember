@@ -1,7 +1,13 @@
 {{#link-to 'question' question.id}}
-<div class="row">
-  <img class="ques-avatar" src={{question.avatar}}>
-  <h4>{{question.asked}}</h4>
-  <h5>Asked By: {{question.author}}</h5>
+<div class="row question-box">
+  <div class="col-xs-2"></div>
+    <div class="col-xs-2">
+      <img class="ques-avatar" src={{question.avatar}}>
+    </div>
+    <div class="col-xs-6">
+      <h4>{{question.asked}}</h4>
+      <h5>Asked By: {{question.author}}</h5>
+    </div>
+  <div class="col-xs-2"></div>
 </div>
 {{/link-to}}

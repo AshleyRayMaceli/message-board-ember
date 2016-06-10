@@ -1,3 +1,10 @@
+body {
+  text-align: center;
+  font-family: 'Varela', sans-serif;
+}
+
+/*images*/
+
 .ques-avatar {
   width: 100px;
   height: 100px;
@@ -8,4 +15,38 @@
   width: 100px;
   height: 100px;
   border-radius: 10px;
+}
+
+/*front-page*/
+
+.question-box {
+  margin-top: 20px;
+  padding: 10px;
+  border: solid black 4px;
+  border-radius: 10px;
+}
+
+/*forms*/
+
+label {
+  font-size: 20pt;
+}
+
+.new-question-box {
+  margin-top: 20px;
+  border: solid black 4px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.new-post-field {
+  font-size: 18pt;
+  width: 100%;
+  height: 40px;
+}
+
+.new-post-body {
+  font-size: 18pt;
+  width: 100%;
+  height: 200px;
 }
