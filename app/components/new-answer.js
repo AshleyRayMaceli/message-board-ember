@@ -5,8 +5,8 @@ export default Ember.Component.extend({
     saveAnswer() {
       var params = {
         comment: this.get('comment'),
-        author: this.get('author'),
-        avatar: this.get('avatar'),
+        username: this.get('username'),
+        image: this.get('image'),
         question: this.get('question')
       };
       this.sendAction('saveAnswer', params);
