@@ -20,10 +20,26 @@ a:hover {
   border-radius: 5px;
   border: black;
   padding: 5px;
+  width: 300px;
 }
 
 .post-button:hover {
   color: tomato;
+}
+
+.delete-button {
+  background-color: tomato;
+  color: black;
+  border-radius: 5px;
+  border: tomato;
+  padding: 5px;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.delete-button:hover {
+  background-color: #FF3232;
+  border: #FF3232;
 }
 
 /*images*/
