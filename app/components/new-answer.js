@@ -17,6 +17,9 @@ export default Ember.Component.extend({
         question: this.get('question')
       };
       this.sendAction('saveAnswer', params);
+      this.set('comment', "");
+      this.set('username', "");
+      this.set('image', "");
     },
     pickSquare() {
       clearAvatarChoice();

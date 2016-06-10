@@ -1,15 +1,16 @@
 <div class="row individual-question-box">
   <h1>{{question.asked}}</h1>
   <h5 class="op-question">Asked By: {{question.author}}</h5>
-  <br>
+  <div class="row modify-buttons">
+    {{update-question question=question updateQuestion="updateQuestion"}}
+  </div>
   <div class="col-xs-4">
     <img class="ques-avatar" src={{question.avatar}}>
   </div>
   <div class="col-xs-8">
     <p>{{question.notes}}</p>
   </div>
-  <div class="modify-buttons">
-    {{update-question question=question updateQuestion="updateQuestion"}}
+  <div class="row modify-buttons">
     <button class="delete-button" {{action 'deleteQuestion' question}}>Delete Question</button>
   </div>
 </div>
