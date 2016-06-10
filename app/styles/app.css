@@ -5,7 +5,7 @@ body {
 }
 
 a {
-  color: #2ECC40;
+  color: #5EBA8C;
 }
 
 a:hover {
@@ -14,12 +14,34 @@ a:hover {
   color: #5AB953;
 }
 
+.post-button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: black;
+  padding: 5px;
+}
+
+.post-button:hover {
+  color: tomato;
+}
+
 /*images*/
 
 .ques-avatar {
   width: 100px;
   height: 100px;
   border-radius: 10px;
+}
+
+.ques-asked {
+  font-size: 20pt;
+  color: black;
+}
+
+.ques-author {
+  font-size: 16pt;
+  color: black;
 }
 
 .answer-avatar {
@@ -35,6 +57,12 @@ a:hover {
   padding: 10px;
   border: solid black 4px;
   border-radius: 10px;
+  background-color: #5EBA8C;
+  opacity: 0.7;
+}
+
+.question-box:hover {
+  opacity: 1;
 }
 
 /*forms*/
@@ -79,11 +107,14 @@ label {
 }*/
 
 .individual-answer-box {
+  background-color: tomato;
+  opacity: 0.7;
   font-size: 14pt;
   margin-top: 20px;
   padding: 10px;
   border: solid black 4px;
   border-radius: 10px;
+  color: black;
 }
 
 .individual-question-box {
