@@ -1,0 +1,54 @@
+{{#if updateQuestionForm}}
+  <h3>Update Your Question</h3>
+
+  <form>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label for="new-post-field">Question:</label>
+        </div>
+        <div class="col-xs-6">
+          {{input class="new-post-field" value=asked id="asked" placeholder=question.asked}}
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label for="new-post-field">Username:</label>
+        </div>
+        <div class="col-xs-6">
+          {{input class="new-post-field" value=author id="author" placeholder=question.author}}
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label for="new-post-field">Avatar URL:</label>
+        </div>
+        <div class="col-xs-6">
+          {{input class="new-post-field" value=avatar id="avatar" placeholder=question.avatar}}
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label for="new-post-field">Additional Notes:</label>
+        </div>
+        <div class="col-xs-6">
+          {{textarea class="new-post-body" value=notes id="notes" placeholder=question.notes}}
+        </div>
+      </div>
+    </div>
+
+    <button class="post-button" {{action 'updateQuestion' question}}>Save</button>
+  </form>
+
+{{else}}
+  <button {{action 'updateQuestionForm'}}>Update this Question</button>
+{{/if}}
