@@ -1,0 +1,42 @@
+<div class="new-post-box">
+  <h2>Add a New Answer Here</h2>
+  <hr>
+
+  <form>
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label for="new-post-field">Username:</label>
+        </div>
+        <div class="col-xs-6">
+          {{input class="new-post-field" value=author id="author"}}
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label for="new-post-field">Avatar URL:</label>
+        </div>
+        <div class="col-xs-6">
+          {{input class="new-post-field" value=avatar id="avatar"}}
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-xs-6">
+          <label for="new-post-field">Your Answer:</label>
+        </div>
+        <div class="col-xs-6">
+          {{textarea class="new-post-body" value=comment id="comment"}}
+        </div>
+      </div>
+    </div>
+
+    <button class="post-button" {{action 'saveAnswer'}}>Submit Answer</button>
+  </form>
+
+</div>

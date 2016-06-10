@@ -10,3 +10,22 @@
   {{update-question question=question updateQuestion="updateQuestion"}}
 
 </div>
+
+<div class="all-answers-box">
+  <h2>Answers For This Question</h2>
+
+  {{#if question.answers}}
+
+  {{#each question.answers as |answer|}}
+    <div class="single-answer">
+      {{answer-tile answer=answer}}
+    </div>
+  {{/each}}
+
+  {{else}}
+    <h3>No answers yet. Submit one below!</h3>
+  {{/if}}
+
+</div>
+
+{{new-answer}}
