@@ -91,6 +91,24 @@ label {
   border-radius: 10px;
 }
 
+.selected-avatar {
+  border: solid black 5px;
+  border-radius: 10px;
+}
+
+.avatar-choice {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
+}
+
+.avatar-choice-box {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
 footer {
   margin-bottom: 20px;
 }
