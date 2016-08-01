@@ -1,15 +1,19 @@
+![Home Page with Questions] (screenshot1.png)
+
+![Specific question page with comments section] (screenshot2.png)
+
 # Message Board
 ## By Ashley Maceli - Epicodus 2016
 
-An Ember 2 web app that simulates what a question and answer message board would look and function like.
+_An Ember 2 web app that simulates what a question and answer message board would look and function like._
 
 ## Description
 
-A web app blog made with Ember 2 that simulated a message board. Uses Google Firebase to store data for questions and answers. Questions and answers have a one-to-many relationship respectively. Question can be viewed, added, updated or deleted. Answers may be viewed and added to questions. Users may choose an avatar from a set of default avatars to post when they answer a question.
+_A web app blog made with Ember 2 that simulated a message board. Uses Google Firebase to store data for questions and answers. Questions and answers have a one-to-many relationship respectively. Question can be viewed, added, updated or deleted. Answers may be viewed and added to questions. Users may choose an avatar from a set of default avatars to post when they answer a question._
 
 ## Prerequisites
 
-You will need the following things properly installed on your computer.
+_You will need the following things properly installed on your computer._
 
 * [Git](http://git-scm.com/)
 * [Node.js](http://nodejs.org/) (with NPM)
@@ -19,7 +23,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/AshleyRayMaceli/message-board-ember.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -43,10 +47,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
